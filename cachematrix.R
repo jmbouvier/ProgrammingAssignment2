@@ -1,8 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Initialization of the inverse inv if the matrix, getting the value of the matrix x, 
-## Computing the inverse
+## Initialization of the inverse (inv) of the matrix x, getting the value of the matrix x, 
+## define the functions of getting ans setting the inverse inv of x
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
@@ -23,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
-        ## if the inverse has been computed, the data are retrieved
+        ## if the inverse inv has been computed (not null), the data are retrieved
         ## else the data are calculated
         inv <- x$getinv()
         if(!is.null(inv)) {
